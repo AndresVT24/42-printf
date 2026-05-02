@@ -6,7 +6,7 @@
 /*   By: ervillca <ervillca@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/02 17:56:02 by ervillca          #+#    #+#             */
-/*   Updated: 2026/05/02 20:34:19 by ervillca         ###   ########.fr       */
+/*   Updated: 2026/05/02 21:06:37 by ervillca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,11 +23,11 @@ int check_sign(char opt, va_list *args)
     else if (opt == 'd' || opt == 'i')
         return (ft_putnbr_sum(va_arg(*args, int)));
     else if (opt == 'u')
-        return 0;
+        return (ft_putnbru_sum(va_arg(*args, int)));
     else if (opt == 'x')
-        return 0;
+        return (ft_putnbrhex_sum(va_arg(*arg, int)));
     else if (opt == 'X')
-        return 0;
+        return (ft_putnbrHEX_sum(va_arg(*arg, int)));
     else if (opt == '%')
         return (ft_putchar_sum('%'));
     return (0);

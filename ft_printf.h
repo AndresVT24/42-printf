@@ -6,7 +6,7 @@
 /*   By: ervillca <ervillca@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/02 14:13:30 by ervillca          #+#    #+#             */
-/*   Updated: 2026/05/02 20:14:01 by ervillca         ###   ########.fr       */
+/*   Updated: 2026/05/02 21:01:25 by ervillca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,8 @@ int	ft_putchar_sum(char c);
 int	ft_putstr_sum(char *s);
 int ft_putnbr_sum(int num);
 int ft_putptr_sum(void *ptr);
+int ft_putnbru_sum(unsigned int n);
+int ft_putnbrhex_sum(int n);
 
 //ft_printf.c
 int ft_printf(char const *format, ...);
