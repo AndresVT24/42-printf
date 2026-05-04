@@ -6,7 +6,7 @@
 #    By: ervillca <ervillca@student.42barcelona.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/05/02 14:13:40 by ervillca          #+#    #+#              #
-#    Updated: 2026/05/02 20:11:35 by ervillca         ###   ########.fr        #
+#    Updated: 2026/05/04 18:58:28 by ervillca         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,8 +24,8 @@ LIBFT = $(LIBFT_DIR)/libft.a
 
 SRCS = ft_printf.c \
        ft_check_sign.c \
-       ft_sum_str.c \
-       ft_printf_utils.c
+       ft_sum_str_p1.c \
+       ft_sum_str_p2.c
 
 OBJS = $(SRCS:.c=.o)
 

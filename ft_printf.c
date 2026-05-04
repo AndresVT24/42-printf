@@ -6,7 +6,7 @@
 /*   By: ervillca <ervillca@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/02 14:15:02 by ervillca          #+#    #+#             */
-/*   Updated: 2026/05/02 19:55:15 by ervillca         ###   ########.fr       */
+/*   Updated: 2026/05/04 18:42:12 by ervillca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,11 +28,13 @@ int ft_printf(char const *format, ...)
         if (format[i] == '%' && format[i + 1])
         {
             count += check_sign(format[i + 1], &args);
-            i ++;
+            i += 2;
         }
         else
+        {
             count += ft_putchar_sum(format[i]);
-        i++;
+            i++;
+        }
     }
     va_end(args);
     return(count);
