@@ -6,13 +6,12 @@
 /*   By: ervillca <ervillca@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/04 18:26:56 by ervillca          #+#    #+#             */
-/*   Updated: 2026/05/04 19:02:58 by ervillca         ###   ########.fr       */
+/*   Updated: 2026/05/04 19:12:33 by ervillca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-//FUNCION A MIRAR
 static int	ft_puthex_ptr(unsigned long num)
 {
 	int		count;
@@ -26,21 +25,21 @@ static int	ft_puthex_ptr(unsigned long num)
 	return (count);
 }
 
-int ft_putptr_sum(void *ptr)
+int	ft_putptr_sum(void *ptr)
 {
-    int count;
-    unsigned long   address;
+	int				count;
+	unsigned long	address;
 
-    address = (unsigned long)ptr;
-    count = 0;
-    count += ft_putstr_sum("0x");
-    count += ft_puthex_ptr(address);
-    return (count);
+	address = (unsigned long)ptr;
+	count = 0;
+	count += ft_putstr_sum("0x");
+	count += ft_puthex_ptr(address);
+	return (count);
 }
 
-int ft_putnbrhex_sum(unsigned int num)
+int	ft_putnbrhex_sum(unsigned int num)
 {
-    int		count;
+	int		count;
 	char	*base;
 
 	count = 0;
@@ -51,9 +50,9 @@ int ft_putnbrhex_sum(unsigned int num)
 	return (count);
 }
 
-int ft_putnbrhex_up_sum(unsigned int num)
+int	ft_putnbrhex_up_sum(unsigned int num)
 {
-    int		count;
+	int		count;
 	char	*base;
 
 	count = 0;

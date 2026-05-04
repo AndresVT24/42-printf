@@ -6,7 +6,7 @@
 /*   By: ervillca <ervillca@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/02 17:56:52 by ervillca          #+#    #+#             */
-/*   Updated: 2026/05/04 19:00:34 by ervillca         ###   ########.fr       */
+/*   Updated: 2026/05/04 19:12:45 by ervillca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,39 +15,37 @@
 int	ft_putchar_sum(char c)
 {
 	write(1, &c, 1);
-    return (1);
+	return (1);
 }
 
-int ft_putstr_sum(char *s)
+int	ft_putstr_sum(char *s)
 {
 	size_t	i;
-    int count;
+	int		count;
 
 	if (!s)
 		return (ft_putstr_sum("(null)"));
-    count = 0;
+	count = 0;
 	i = 0;
 	while (s[i])
 	{
 		count += ft_putchar_sum(s[i]);
 		i++;
 	}
-    return (count);
+	return (count);
 }
 
-int ft_putnbr_sum(int num)
+int	ft_putnbr_sum(int num)
 {
-    char    *str;
-    int count;
+	char	*str;
+	int		count;
 
-    str = ft_itoa(num);
-    if(!str)
-    {
-        return (0);
-    }
-    count = ft_putstr_sum(str);
-    free(str);
-    return(count);
+	str = ft_itoa(num);
+	if (!str)
+		return (0);
+	count = ft_putstr_sum(str);
+	free(str);
+	return (count);
 }
 
 int	ft_putnbru_sum(unsigned int num)
