@@ -6,7 +6,7 @@
 /*   By: ervillca <ervillca@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/02 14:49:19 by ervillca          #+#    #+#             */
-/*   Updated: 2026/05/05 14:51:36 by ervillca         ###   ########.fr       */
+/*   Updated: 2026/05/06 09:12:49 by ervillca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,6 +76,6 @@ int main(void)
     o_ret =    printf("Orig: %s %c %d %x %%\n", "Test", 'X', -99, 15);
     m_ret = ft_printf("Mine: %s %c %d %x %%\n", "Test", 'X', -99, 15);
     printf("-> Retornos: Orig = %d | Mine = %d\n\n", o_ret, m_ret);
-
+    
     return (0);
 }
