@@ -25,18 +25,18 @@ static int	ft_puthex_ptr(unsigned long num)
 	return (count);
 }
 
-int ft_putptr_sum(void *ptr)
+int	ft_putptr_sum(void *ptr)
 {
-    int             count;
-    unsigned long   address;
+	int				count;
+	unsigned long	address;
 
-    if (!ptr)
-        return (ft_putstr_sum("(nil)"));
-    address = (unsigned long)ptr;
-    count = 0;
-    count += ft_putstr_sum("0x");
-    count += ft_puthex_ptr(address);
-    return (count);
+	if (!ptr)
+		return (ft_putstr_sum("(nil)"));
+	address = (unsigned long)ptr;
+	count = 0;
+	count += ft_putstr_sum("0x");
+	count += ft_puthex_ptr(address);
+	return (count);
 }
 
 int	ft_putnbrhex_sum(unsigned int num)
